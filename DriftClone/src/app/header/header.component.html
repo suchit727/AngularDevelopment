@@ -1,0 +1,63 @@
+<!-- <mat-toolbar>
+    <mat-toolbar-row class="justify-content-between"> 
+        <button mat-icon-button ><mat-icon>menu</mat-icon></button>
+        <div class="row mr-2 ml-auto">
+            <ul>
+                <li>
+                    <button mat-button [mat-menu-trigger-for]= "menu" class="user mt-2 d-flex">
+                        <img src="../../assets/"alt="">
+                        User Name
+                        <mat-icon>Keyboard_arrow_down</mat-icon>
+                    </button>
+                    <button mat-menu-item>
+                        <mat-icon>exit to app</mat-icon>
+                        Logout
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar> -->
+<mat-toolbar>
+    <mat-toolbar-row class="justify-content-between">
+      <button mat-icon-button (click)="toggleSidebar()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <div class="container" style="width: 400px;margin-left: -1rem">
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      
+      </form>
+    </div>
+    <mat-icon class="icon-style-1">apps</mat-icon>
+    <p class="px-2 mt-3 p-style" >Apps</p>
+    <mat-icon class="icon-style">notifications_none</mat-icon>
+    <img class="img-style" src="../../assets/download.png" alt="">
+      <div class="row mr-2 ml-auto">
+        <ul class="row m-0 align-items-center">
+          <li>
+            <button
+              mat-button
+              [matMenuTriggerFor]="menu"
+              class="user mt-2 d-flex align-items-center"
+            >
+              <img src="./assets/user.jpg" alt="" class="user-image mr-1 p-2" />
+  
+              User Name
+              <mat-icon class="user-image-icon ml-1"
+                >keyboard_arrow_down</mat-icon
+              >
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>
+                <mat-icon>exit_to_app</mat-icon>
+                Logout
+              </button>
+            </mat-menu>
+          </li>
+        </ul>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  

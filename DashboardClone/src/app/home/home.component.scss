@@ -1,0 +1,26 @@
+.card{
+  border: 1px solid;
+  width: 220px;
+  height: 110px;
+  margin: 10px 10px;
+  display: inline-block;
+  box-shadow: 1px 1px 1px grey;
+  padding: 21px;
+}
+.dt-page__title {
+  font-weight: 400;
+  padding-top: 40px;
+  padding-left: 15px;
+  padding-bottom: 0px;
+}
+
+.name{
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.number{
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: block;
+}
